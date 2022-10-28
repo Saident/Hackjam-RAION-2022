@@ -1,4 +1,4 @@
-package com.example.hackjam2022.ui.home;
+package com.example.hackjam2022.ui.around;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.hackjam2022.databinding.FragmentHomeBinding;
+import com.example.hackjam2022.databinding.FragmentAroundBinding;
 
-public class HomeFragment extends Fragment {
+public class AroundFragment extends Fragment {
 
-    private FragmentHomeBinding binding;
+    private FragmentAroundBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        AroundViewModel aroundViewModel =
+                new ViewModelProvider(this).get(AroundViewModel.class);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        binding = FragmentAroundBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-//        final TextView textView = binding.textHome;
-//        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+//        final TextView textView = binding.textAround;
+//        aroundViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

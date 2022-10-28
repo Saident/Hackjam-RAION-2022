@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     android:paddingTop="?attr/actionBarSize">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
         android:layout_width="0dp"
@@ -17,15 +27,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/bottom_nav_menu" />
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/my_toolbar"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-    />
 
     <fragment
         android:id="@+id/nav_host_fragment_activity_main"

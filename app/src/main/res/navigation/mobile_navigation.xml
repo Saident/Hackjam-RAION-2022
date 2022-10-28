@@ -8,18 +8,31 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.hackjam2022.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:label="navigation_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.hackjam2022.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_ticket"
+        android:name="com.example.hackjam2022.ui.ticket.TicketFragment"
+        android:label="navigation_ticket"
+        tools:layout="@layout/fragment_ticket" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.hackjam2022.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_around"
+        android:name="com.example.hackjam2022.ui.around.AroundFragment"
+        android:label="navigation_around"
+        tools:layout="@layout/fragment_around" />
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.example.hackjam2022.ui.history.HistoryFragment"
+        android:label="navigation_history"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.hackjam2022.ui.profile.ProfileFragment"
+        android:label="navigation_profile"
+        tools:layout="@layout/fragment_profile" />
+
 </navigation>
