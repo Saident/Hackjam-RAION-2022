@@ -36,9 +36,10 @@
             android:layout_marginTop="20dp"
             android:hint="Email Address"
             android:inputType="textEmailAddress"
+            android:background="@drawable/bg_input"
             android:paddingLeft="30dp"
-            android:textColor="#767676"
-            android:textColorHint="#767676" />
+            android:textColor="@color/secondary1"
+            android:textColorHint="@color/secondary1" />
 
         <EditText
             android:id="@+id/et_password"
@@ -47,9 +48,10 @@
             android:layout_marginTop="20dp"
             android:paddingLeft="30dp"
             android:hint="Password"
+            android:background="@drawable/bg_input"
             android:inputType="textPassword"
-            android:textColor="#767676"
-            android:textColorHint="#767676"/>
+            android:textColor="@color/secondary1"
+            android:textColorHint="@color/secondary1"/>
 
         <Button
             android:id="@+id/bt_login"
@@ -57,7 +59,8 @@
             android:layout_height="45dp"
             android:layout_marginTop="30dp"
             android:text="LOGIN"
-            android:textAllCaps="true"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="normal"/>
     </LinearLayout>
@@ -73,6 +76,20 @@
         android:layout_marginEnd="60dp"
         android:layout_marginTop="24dp"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/content" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:clickable="true"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

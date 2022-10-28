@@ -18,8 +18,9 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
-        android:layout_width="375dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="26dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/bot_nav_background"
         app:layout_constraintBottom_toBottomOf="parent"

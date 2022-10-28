@@ -12,8 +12,9 @@ import android.widget.TextView;
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button bt_login;
-    public EditText etEmail, etPassword;
-    TextView forgotpass;
+    EditText etEmail, etPassword;
+
+    TextView forgotpass, register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +25,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         bt_login.setOnClickListener(this);
         etEmail = findViewById(R.id.et_email);
         etPassword = findViewById(R.id.et_password);
-
+        register = findViewById(R.id.register);
+        register.setOnClickListener(this);
     }
 
     @Override
@@ -34,11 +36,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 //                Loginuser();
                 startActivity(new Intent(this, MainActivity.class));
                 break;
-//            case R.id.register:
-//                startActivity(new Intent(this, RegisterActivity.class));
-//                break;
-            case R.id.forgot:
+            case R.id.register:
+                startActivity(new Intent(this, RegisterActivity.class));
                 break;
+//            case R.id.forgot:
+//                break;
         }
     }
 }
