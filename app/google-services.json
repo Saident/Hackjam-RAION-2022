@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "204810378011",
+    "firebase_url": "https://hackjam-2022-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "hackjam-2022",
     "storage_bucket": "hackjam-2022.appspot.com"
   },
@@ -10,35 +11,6 @@
         "mobilesdk_app_id": "1:204810378011:android:3feaa008bc5d439dd191be",
         "android_client_info": {
           "package_name": "com.android.application"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "204810378011-te8h0743gv4brb56qgoeia3m939tie92.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBjtWHN3BLZOLLHZntRwq4oboSXXiJfBAM"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "204810378011-te8h0743gv4brb56qgoeia3m939tie92.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:204810378011:android:d9da8965f8d66b0fd191be",
-        "android_client_info": {
-          "package_name": "com.example.hackjam2022"
         }
       },
       "oauth_client": [

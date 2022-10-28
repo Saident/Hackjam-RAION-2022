@@ -1,5 +1,4 @@
 package com.example.hackjam2022.ui.around;
-
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
