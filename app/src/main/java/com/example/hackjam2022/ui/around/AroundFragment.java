@@ -23,6 +23,7 @@ public class AroundFragment extends Fragment {
 
         binding = FragmentAroundBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+        //edit here
 
 //        final TextView textView = binding.textAround;
 //        aroundViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);

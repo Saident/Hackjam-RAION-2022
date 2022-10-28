@@ -23,6 +23,7 @@ public class TicketFragment extends Fragment {
 
         binding = FragmentTicketBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+        //edit here
 
 //        final TextView textView = binding.textTicket;
 //        ticketViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);

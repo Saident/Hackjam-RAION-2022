@@ -23,6 +23,7 @@ public class HistoryFragment extends Fragment {
 
         binding = FragmentHistoryBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+        //edit here
 
 //        final TextView textView = binding.textHistory;
 //        historyViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
