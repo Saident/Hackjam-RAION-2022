@@ -1,9 +1,7 @@
 package com.example.hackjam2022;
 
 import android.os.Bundle;
-import android.view.View;
-
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+//import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -28,9 +26,9 @@ public class MainActivity extends AppCompatActivity{
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
 
-        BottomNavigationView navView = findViewById(R.id.nav_view);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
+        // BottomNavigationView navView = findViewById(R.id.nav_view); gak kepake
+
+        // Passing each menu ID as a set of Ids because each menu should be considered as top level destinations
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_home, R.id.navigation_ticket, R.id.navigation_around, R.id.navigation_history, R.id.navigation_profile)
                 .build();
