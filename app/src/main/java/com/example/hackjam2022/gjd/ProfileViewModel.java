@@ -1,16 +1,16 @@
-package com.example.hackjam2022;
+package com.example.hackjam2022.gjd;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class TicketViewModel extends ViewModel {
+public class ProfileViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public TicketViewModel() {
+    public ProfileViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is ticket fragment");
+        mText.setValue("This is profile fragment");
     }
 
     public LiveData<String> getText() {

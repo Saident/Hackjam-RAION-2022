@@ -1,4 +1,4 @@
-package com.example.hackjam2022;
+package com.example.hackjam2022.gjd;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.hackjam2022.R;
 import com.example.hackjam2022.databinding.FragmentProfileBinding;
 
 public class ProfileFragment extends Fragment {

@@ -1,4 +1,4 @@
-package com.example.hackjam2022;
+package com.example.hackjam2022.gjd;
 import android.view.View;
 import android.widget.TextView;
 
