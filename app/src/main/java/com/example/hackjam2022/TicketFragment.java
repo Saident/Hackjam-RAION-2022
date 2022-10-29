@@ -1,10 +1,9 @@
-package com.example.hackjam2022.ui.ticket;
+package com.example.hackjam2022;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -21,13 +20,12 @@ public class TicketFragment extends Fragment {
         TicketViewModel ticketViewModel =
                 new ViewModelProvider(this).get(TicketViewModel.class);
 
-        binding = FragmentTicketBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
+        View view = inflater.inflate(R.layout.fragment_ticket, container, false);
         //edit here
 
 //        final TextView textView = binding.textTicket;
 //        ticketViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-        return root;
+        return view;
     }
 
     @Override

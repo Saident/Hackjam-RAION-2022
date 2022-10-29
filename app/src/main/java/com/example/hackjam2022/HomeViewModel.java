@@ -1,15 +1,16 @@
-package com.example.hackjam2022.ui.around;
+package com.example.hackjam2022;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class AroundViewModel extends ViewModel {
+public class HomeViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public AroundViewModel() {
+    public HomeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is around fragment");
+        mText.setValue("This is home fragment");
     }
 
     public LiveData<String> getText() {
