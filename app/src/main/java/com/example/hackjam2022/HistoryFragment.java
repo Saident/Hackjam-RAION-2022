@@ -1,4 +1,4 @@
-package com.example.hackjam2022.ui.history;
+package com.example.hackjam2022;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -20,13 +20,12 @@ public class HistoryFragment extends Fragment {
         HistoryViewModel historyViewModel =
                 new ViewModelProvider(this).get(HistoryViewModel.class);
 
-        binding = FragmentHistoryBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
+        View view = inflater.inflate(R.layout.fragment_history, container, false);
         //edit here
 
 //        final TextView textView = binding.textHistory;
 //        historyViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-        return root;
+        return view;
     }
 
     @Override

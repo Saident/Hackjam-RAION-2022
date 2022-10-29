@@ -1,16 +1,16 @@
-package com.example.hackjam2022.ui.ticket;
+package com.example.hackjam2022;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class TicketViewModel extends ViewModel {
+public class HistoryViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public TicketViewModel() {
+    public HistoryViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is ticket fragment");
+        mText.setValue("This is History fragment");
     }
 
     public LiveData<String> getText() {

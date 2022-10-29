@@ -1,4 +1,4 @@
-package com.example.hackjam2022.ui.profile;
+package com.example.hackjam2022;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
