@@ -21,7 +21,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button bt_login;
+    Button bt_login, back;
     EditText etEmail, etPassword;
     FirebaseAuth mAuth;
 
@@ -36,10 +36,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         bt_login = (Button) findViewById(R.id.bt_login);
         bt_login.setOnClickListener(this);
+        back = findViewById(R.id.back);
+        back.setOnClickListener(this);
         etEmail = findViewById(R.id.et_email);
         etPassword = findViewById(R.id.et_password);
-        register = (TextView) findViewById(R.id.tv_register);
-        register.setOnClickListener(this);
     }
 
     @Override
@@ -47,13 +47,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         switch(v.getId()){
             case R.id.bt_login:
                 Loginuser();
-                startActivity(new Intent(this, HomeActivity.class));
                 break;
-            case R.id.tv_register:
-                startActivity(new Intent(this, RegisterActivity.class));
+            case R.id.back:
+                startActivity(new Intent(this, OnBoarding.class));
                 break;
-//            case R.id.forgot:
-//                break;
+            case R.id.forgot:
+                break;
         }
     }
 

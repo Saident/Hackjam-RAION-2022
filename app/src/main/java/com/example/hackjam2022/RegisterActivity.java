@@ -24,7 +24,7 @@ public class RegisterActivity extends AppCompatActivity{
 
     private EditText et_fullname, et_email, et_password, et_confpassword;
     private ImageView logo;
-    private Button register;
+    private Button register, back;
     FirebaseAuth mAuth;
 
     @Override
@@ -40,6 +40,14 @@ public class RegisterActivity extends AppCompatActivity{
         et_password = findViewById(R.id.et_password);
 
         logo = findViewById(R.id.iv_logo);
+
+        back = findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), OnBoarding.class));
+            }
+        });
 
         register = (Button) findViewById(R.id.bt_register);
         register.setOnClickListener(new View.OnClickListener() {
