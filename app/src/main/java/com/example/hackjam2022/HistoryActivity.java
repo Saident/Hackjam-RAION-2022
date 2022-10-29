@@ -14,7 +14,7 @@ public class HistoryActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_home);
+        setContentView(R.layout.fragment_history);
         home = findViewById(R.id.bt_home);
         home.setOnClickListener(this);
         ticket = findViewById(R.id.bt_ticket);
