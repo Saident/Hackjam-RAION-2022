@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:204810378011:android:3feaa008bc5d439dd191be",
         "android_client_info": {
-          "package_name": "com.android.application"
+          "package_name": "com.example.hackjam2022"
         }
       },
       "oauth_client": [
