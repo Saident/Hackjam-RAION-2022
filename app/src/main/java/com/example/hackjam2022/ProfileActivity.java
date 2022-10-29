@@ -21,7 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class ProfileActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button home, ticket, search, history, profile;
+    Button home, ticket, search, history, profile, logout;
     FirebaseUser user;
     FirebaseAuth mAuth;
     private String userID;
@@ -41,6 +41,15 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         history.setOnClickListener(this);
         profile = findViewById(R.id.bt_profile);
         profile.setOnClickListener(this);
+
+        logout = findViewById(R.id.logout);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),OnBoarding.class);
+                startActivity(i);
+            }
+        });
 
         getUserName();
         getEmail();
